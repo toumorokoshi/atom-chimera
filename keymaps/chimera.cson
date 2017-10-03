@@ -1,0 +1,18 @@
+"atom-workspace":
+  "ctrl-alt-o": "chimera:toggle"
+
+'atom-workspace:not(.leader-mode), atom-workspace:not(.leader-mode) atom-text-editor:not(.mini)':
+  'alt-x': 'leader:enable'
+
+'.platform-darwin atom-workspace:not(.leader-mode), atom-workspace:not(.leader-mode) atom-text-editor:not(.mini)':
+  'cmd-x': 'leader:enable'
+
+'atom-workspace.leader-mode, atom-workspace.leader-mode atom-text-editor:not(.mini)':
+  's': "core:close"
+  'p h': "pane:split-left"
+  'p j': "pane:split-down"
+  'p k': "pane:split-up"
+  'p l': "pane:split-right"
+
+'atom-workspace:not(.leader-mode) atom-text-editor.mini':
+  'alt-x': 'native!'

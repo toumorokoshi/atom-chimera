@@ -1,0 +1,23 @@
+{
+  "name": "chimera",
+  "main": "./lib/chimera",
+  "version": "0.0.1",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "chimera:toggle"
+  },
+  "repository": "https://github.com/atom/chimera",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-package-dependencies": "~1"
+  },
+  "package-dependencies": {
+    "advanced-open-file": null,
+    "leader-plus": null
+  }
+}

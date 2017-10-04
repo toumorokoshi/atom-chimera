@@ -1,18 +1,85 @@
+# Chimera keymap
+#
+# This is a highly customized keymap, designed to be used with
+# a system like vim.
+# It assumes, more or less, three namespaces:
+# 1. vim command mode, for fast text manipulation (unchanged)
+# 2. insert mode, adding text like normal
+# 3. alt-* commands, providing fast command execution without switching
+#    back and forth quickly.
+
+# WHY ALT?
+# why alt as the prefix, in constrast to command or ctrl?
+#
+# It's really all about what's closest to your thumb.
+# Emacs keybindings were based off of keyboard for MIT Lisp machines,
+# which places the ctrl key right next to the thumb, close to the spacebar:
+#
+# https://en.wikipedia.org/wiki/Space-cadet_keyboard
+#
+# The goal with alt is that it makes executing command a matter
+# of using your thumb + finger again, which is pretty easy and
+# painless to accomplish, regardless of the key you're reaching for.
+#
+# If you're using apple keyboards, setting the leader key to command
+# works great.
+#
+# Effectively, the leader key should be whatever is closest
+# to your thumb
+#
+# WHY VIM?
+#
+# Anyone who's become fluent with vim keybindings will tell you the
+# value of using it. It makes navigation incredibly easy, and the
+# ability to compose multiple chords of commands makes
+# it easy to express complex situations in a few keystrokes.
 "atom-workspace":
   "ctrl-alt-o": "chimera:toggle"
 
-'atom-workspace:not(.leader-mode), atom-workspace:not(.leader-mode) atom-text-editor:not(.mini)':
-  'alt-x': 'leader:enable'
+'body':
+  # some commands are close to their standard atom binding
+  # equivalent.
+  'alt-shift-p': 'command-palette:toggle'
+  # text manipulation and frequent commands are added as top-level,
+  # to reduce the friction to execute
+  'alt-s': 'core:save'
+  'alt-n': 'core:move-down'
+  'alt-m': 'core:move-up'
+  'alt-t': 'editor:transpose'
+  'alt-f': 'find-and-replace:show'
+  'alt-shift-f': 'project-find:show'
+  # deeper, lesser used commands are activated
+  # under a common prefix alt-x
+  'alt-p': 'fuzzy-finder:toggle-file-finder'
+  'alt-x l': 'window:focus-pane-on-right'
+  'alt-x j': 'window:focus-pane-below'
+  'alt-x k': 'window:focus-pane-above'
+  'alt-x h': 'window:focus-pane-on-left'
+  'alt-x 3': 'pane:split-right-and-copy-active-item'
+  'alt-x 2': 'pane:split-down-and-copy-active-item'
+  'alt-x 0': 'pane:close'
+  'alt-x f': 'advanced-open-file:toggle'
+  'alt-x b b': 'sync-settings:backup'
+  'alt-x b r': 'sync-settings:restore'
+  'alt-x g c': 'git-plus:add-all-and-commit'
+  'alt-x g p': 'git-plus:push'
+  'alt-x g u': 'git-plus:pull'
+  'alt-x g l': 'git-plus:log'
+  'alt-x g k': 'git-plus:log'
+  'alt-x p l': 'project-manager:list-projects'
+  'alt-x p s': 'project-manager:save-project'
+  'alt-x p r': 'project-folder:remove'
+  'alt-x i g': 'goto-definition:go'
+  'ctrl-n': 'multi-cursor:expandDown'
+  # alt-c is reserved for custom keybindings. feel free to add
+  # all custom bindings there
 
-'.platform-darwin atom-workspace:not(.leader-mode), atom-workspace:not(.leader-mode) atom-text-editor:not(.mini)':
-  'cmd-x': 'leader:enable'
+'.advanced-open-file atom-text-editor':
+  'alt-n': 'advanced-open-file:move-cursor-down'
+  'alt-p': 'advanced-open-file:move-cursor-up'
+  'backspace': 'advanced-open-file:delete-path-component'
+  'shift-enter': 'application:add-project-folder'
 
-'atom-workspace.leader-mode, atom-workspace.leader-mode atom-text-editor:not(.mini)':
-  's': "core:close"
-  'p h': "pane:split-left"
-  'p j': "pane:split-down"
-  'p k': "pane:split-up"
-  'p l': "pane:split-right"
 
-'atom-workspace:not(.leader-mode) atom-text-editor.mini':
-  'alt-x': 'native!'
+'atom-text-editor[data-grammar~="python"]:not([mini])':
+  'alt-x i g': 'python-tools:goto-definition'

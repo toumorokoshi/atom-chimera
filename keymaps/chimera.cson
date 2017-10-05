@@ -47,7 +47,7 @@
   'alt-j': 'core:move-down'
   'alt-k': 'core:move-up'
   'alt-n': 'multi-cursor:expandDown'
-  'alt-t': 'editor:transpose'
+  'alt-t': 'termrk:toggle',
   'alt-f': 'find-and-replace:show'
   'alt-shift-f': 'project-find:show'
   'alt-p': 'fuzzy-finder:toggle-file-finder'
@@ -85,3 +85,6 @@
   'alt-k': 'advanced-open-file:move-cursor-up'
   'backspace': 'advanced-open-file:delete-path-component'
   'shift-enter': 'application:add-project-folder'
+
+'.termrk':
+  'alt-t': 'termrk:toggle'

@@ -1,7 +1,7 @@
 {
   "name": "chimera",
   "main": "./lib/chimera",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "An editor built on atom, splicing the best DNA of multiple text editors",
   "keywords": [],
   "repository": "https://github.com/toumorokoshi/atom-chimera",

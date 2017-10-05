@@ -36,7 +36,8 @@
 "atom-workspace":
   "ctrl-alt-o": "chimera:toggle"
 
-'body':
+# a selector to override all selectors
+'.platform-linux atom-workspace atom-text-editor, .platform-linux atom-workspace atom-text-editor:not([mini]), .platform-linux atom-workspace body, .platform-linux atom-workspace, .platform-linux body, atom-workspace atom-text-editor, atom-workspace atom-text-editor:not([mini]), atom-workspace body, atom-workspace, body':
   # some commands are close to their standard atom binding
   # equivalent.
   'alt-shift-p': 'command-palette:toggle'
@@ -48,9 +49,10 @@
   'alt-t': 'editor:transpose'
   'alt-f': 'find-and-replace:show'
   'alt-shift-f': 'project-find:show'
+  'alt-p': 'fuzzy-finder:toggle-file-finder'
+  'alt-shift-p': 'command-palette:toggle'
   # deeper, lesser used commands are activated
   # under a common prefix alt-x
-  'alt-p': 'fuzzy-finder:toggle-file-finder'
   'alt-x l': 'window:focus-pane-on-right'
   'alt-x j': 'window:focus-pane-below'
   'alt-x k': 'window:focus-pane-above'

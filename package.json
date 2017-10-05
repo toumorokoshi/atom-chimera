@@ -9,6 +9,9 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
+  "dependencies": {
+    "atom-package-dependencies": "~1"
+  },
   "package-dependencies": {
     "advanced-open-file": null,
     "leader-plus": null

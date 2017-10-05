@@ -14,6 +14,7 @@
   },
   "package-dependencies": {
     "advanced-open-file": null,
-    "leader-plus": null
+    "leader-plus": null,
+    "termrk": null
   }
 }

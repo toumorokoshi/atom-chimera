@@ -44,13 +44,15 @@
   # text manipulation and frequent commands are added as top-level,
   # to reduce the friction to execute
   'alt-s': 'core:save'
-  'alt-n': 'core:move-down'
-  'alt-m': 'core:move-up'
+  'alt-j': 'core:move-down'
+  'alt-k': 'core:move-up'
+  'alt-n': 'multi-cursor:expandDown'
   'alt-t': 'editor:transpose'
   'alt-f': 'find-and-replace:show'
   'alt-shift-f': 'project-find:show'
   'alt-p': 'fuzzy-finder:toggle-file-finder'
   'alt-shift-p': 'command-palette:toggle'
+  'alt-o': 'advanced-open-file:toggle'
   # deeper, lesser used commands are activated
   # under a common prefix alt-x
   'alt-x l': 'window:focus-pane-on-right'
@@ -60,28 +62,26 @@
   'alt-x 3': 'pane:split-right-and-copy-active-item'
   'alt-x 2': 'pane:split-down-and-copy-active-item'
   'alt-x 0': 'pane:close'
-  'alt-x f': 'advanced-open-file:toggle'
   'alt-x b b': 'sync-settings:backup'
   'alt-x b r': 'sync-settings:restore'
+  # g is reserved for version control (currently only git is supported)
   'alt-x g c': 'git-plus:add-all-and-commit'
+  'alt-x g m': 'git-plus:menu'
   'alt-x g p': 'git-plus:push'
   'alt-x g u': 'git-plus:pull'
   'alt-x g l': 'git-plus:log'
   'alt-x g k': 'git-plus:log'
+  # p is reserved for project management
   'alt-x p l': 'project-manager:list-projects'
   'alt-x p s': 'project-manager:save-project'
   'alt-x p r': 'project-folder:remove'
+  # i is reserved for ide operations
   'alt-x i g': 'goto-definition:go'
-  'ctrl-n': 'multi-cursor:expandDown'
   # alt-c is reserved for custom keybindings. feel free to add
   # all custom bindings there
 
 '.advanced-open-file atom-text-editor':
-  'alt-n': 'advanced-open-file:move-cursor-down'
-  'alt-p': 'advanced-open-file:move-cursor-up'
+  'alt-j': 'advanced-open-file:move-cursor-down'
+  'alt-k': 'advanced-open-file:move-cursor-up'
   'backspace': 'advanced-open-file:delete-path-component'
   'shift-enter': 'application:add-project-folder'
-
-
-'atom-text-editor[data-grammar~="python"]:not([mini])':
-  'alt-x i g': 'python-tools:goto-definition'

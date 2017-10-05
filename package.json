@@ -10,7 +10,7 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "atom-package-deps": "~1"
+    "atom-package-deps": "~4"
   },
   "package-deps": [
     "vim-mode-plus:latest",

@@ -21,5 +21,7 @@
     "advanced-open-file": null,
     "goto-definition": null,
     "termrk": null,
+    "jumpy": null,
+    "last-cursor-position": null
   }
 }

@@ -13,8 +13,13 @@
     "atom-package-dependencies": "~1"
   },
   "package-dependencies": {
+    "vim-mode-plus": null,
+    "git-plus": null,
+    "multi-cursor": null,
+    "sync-settings": null,
+    "project-manager": null,
     "advanced-open-file": null,
-    "leader-plus": null,
-    "termrk": null
+    "goto-definition": null,
+    "termrk": null,
   }
 }

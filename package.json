@@ -10,18 +10,18 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "atom-package-dependencies": "~1"
+    "atom-package-deps": "~1"
   },
-  "package-dependencies": {
-    "vim-mode-plus": null,
-    "git-plus": null,
-    "multi-cursor": null,
-    "sync-settings": null,
-    "project-manager": null,
-    "advanced-open-file": null,
-    "goto-definition": null,
-    "termrk": null,
-    "jumpy": null,
-    "last-cursor-position": null
-  }
+  "package-deps": [
+    "vim-mode-plus:latest",
+    "git-plus:latest",
+    "multi-cursor:latest",
+    "sync-settings:latest",
+    "project-manager:latest",
+    "advanced-open-file:latest",
+    "goto-definition:latest",
+    "termrk:latest",
+    "jumpy:latest",
+    "last-cursor-position:latest"
+  ]
 }

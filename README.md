@@ -45,16 +45,16 @@ The full keymap can be seen by looking at your keybindings, and searching for Ch
 
 The packages installed by Chimera are (with corresponding leader keys)
 
-* (vim-mode-plus)[https://atom.io/packages/vim-mode-plus]: use vim keybindings, and edit much more efficiently than without.
-* (git-plus)[https://atom.io/packages/git-plus] (<leader> g): manipulate git without leaving the editor.
-* (multi-cursor)[https://atom.io/packages/multi-cursor] (alt-n to create a cursor and move down): perform the same operations on multiple lines of text.
-* (sync-settings)[https://atom.io/packages/sync-settings] (<leader> b): save your atom settings across computers.
-* (project-manager)[https://atom.io/packages/project-manager] (<leader> p): manage projects really easily.
-* (advanced-open-file)[https://atom.io/packages/advanced-open-file] (alt-o to trigger): great replacement for find files with keyboard only.
-* (goto-definition)[https://atom.io/packages/goto-definition] (<leader> i g): one of the must useful pieces of IDE functionality.
-* (termrk)[https://atom.io/packages/termrk]: open up a terminal in atom instead and reduce overhead of switching windows.
-* (jumpy)[https://atom.io/packages/jumpy]: (shift-enter) easily jump to the section of text you want to edit.
-* (last-cursor-position)[https://atom.io/packages/last-cursor-position]: (alt--, alt-+): easily return back to what you were editing before.
+* [vim-mode-plus](https://atom.io/packages/vim-mode-plus): use vim keybindings, and edit much more efficiently than without.
+* [git-plus](https://atom.io/packages/git-plus) (<leader> g): manipulate git without leaving the editor.
+* [multi-cursor](https://atom.io/packages/multi-cursor) (alt-n to create a cursor and move down): perform the same operations on multiple lines of text.
+* [sync-settings](https://atom.io/packages/sync-settings) (<leader> b): save your atom settings across computers.
+* [project-manager](https://atom.io/packages/project-manager) (<leader> p): manage projects really easily.
+* [advanced-open-file](https://atom.io/packages/advanced-open-file) (alt-o to trigger): great replacement for find files with keyboard only.
+* [goto-definition](https://atom.io/packages/goto-definition) (<leader> i g): one of the must useful pieces of IDE functionality.
+* [termrk](https://atom.io/packages/termrk): open up a terminal in atom instead and reduce overhead of switching windows.
+* [jumpy](https://atom.io/packages/jumpy): (shift-enter) easily jump to the section of text you want to edit.
+* [last-cursor-position](https://atom.io/packages/last-cursor-position): (alt--, alt-+): easily return back to what you were editing before.
 
 ## What Editors Inspired Chimera?
 
@@ -74,7 +74,7 @@ Even vanilla vim stands the test of time for editing text. It brings powerful ph
 
 #### modal editing
 
- providing a rich set of keybindings avilable with a single keystroke
+ providing a rich set of keybindings available with a single keystroke
 
 #### composable keybindings
 

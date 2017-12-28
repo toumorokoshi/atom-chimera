@@ -36,6 +36,24 @@
 "atom-workspace":
   "ctrl-alt-o": "chimera:toggle"
 
+'.platform-linux atom-workspace:not(.leader-mode), atom-workspace:not(.leader-mode) atom-text-editor:not(.mini)':
+  'alt-y': 'leader:enable'
+
+'.platform-linux atom-workspace:not(.leader-mode) atom-text-editor.mini':
+  'alt-y': 'native!'
+
+'.platform-darwin atom-workspace:not(.leader-mode), atom-workspace:not(.leader-mode) atom-text-editor:not(.mini)':
+  'cmd-y': 'leader:enable'
+
+'.platform-darwin atom-workspace:not(.leader-mode) atom-text-editor.mini':
+  'cmd-y': 'native!'
+
+'atom-workspace.leader-mode, atom-workspace.leader-mode atom-text-editor:not(.mini)':
+  'w': "core:close"
+  'g c': 'git-plus:add-all-and-commit'
+  'g s': 'git-plus:status'
+
+
 # a selector to override all selectors
 '.platform-linux atom-workspace atom-text-editor, .platform-linux atom-workspace atom-text-editor:not([mini]), .platform-linux atom-workspace body, .platform-linux atom-workspace, .platform-linux body, atom-workspace atom-text-editor, atom-workspace atom-text-editor:not([mini]), atom-workspace body, atom-workspace, body':
   # some commands are close to their standard atom binding
@@ -47,7 +65,7 @@
   'alt-j': 'core:move-down'
   'alt-k': 'core:move-up'
   'alt-n': 'multi-cursor:expandDown'
-  'alt-t': 'termrk:toggle',
+  'alt-t': 'platformio-ide-terminal:toggle',
   'alt-f': 'find-and-replace:show'
   'alt-shift-f': 'project-find:show'
   'alt-p': 'fuzzy-finder:toggle-file-finder'
@@ -79,6 +97,12 @@
   'alt-x i g': 'goto-definition:go'
   # alt-c is reserved for custom keybindings. feel free to add
   # all custom bindings there
+  # alt-x f: file operations
+  'alt-x f d': 'tree-view:remove'
+  'alt-x f r': 'tree-view:rename'
+  'alt-x f t': 'tree-view:toggle'
+  'alt-x f s': 'tree-view:show'
+  'alt-x f p': 'chmod:current-file'
 
 '.advanced-open-file atom-text-editor':
   'alt-j': 'advanced-open-file:move-cursor-down'
@@ -86,5 +110,10 @@
   'backspace': 'advanced-open-file:delete-path-component'
   'shift-enter': 'application:add-project-folder'
 
-'.termrk':
-  'alt-t': 'termrk:toggle'
+'.platformio-ide-terminal .terminal':
+  'alt-t': 'platformio-ide-terminal:toggle'
+  'alt-k': 'platformio-ide-terminal:prev'
+  'alt-j': 'platformio-ide-terminal:next'
+  'alt-n': 'platformio-ide-terminal:new'
+  'alt-c': 'platformio-ide-terminal:close'
+  'alt-f': 'platformio-ide-terminal:fullscreen'

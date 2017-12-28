@@ -13,15 +13,17 @@
     "atom-package-deps": "latest"
   },
   "package-deps": [
-    "vim-mode-plus",
-    "git-plus",
-    "multi-cursor",
-    "sync-settings",
-    "project-manager",
     "advanced-open-file",
+    "chmod",
+    "git-plus",
     "goto-definition",
-    "termrk",
     "jumpy",
-    "last-cursor-position"
+    "last-cursor-position",
+    "leader",
+    "multi-cursor",
+    "platformio-ide-terminal",
+    "project-manager",
+    "sync-settings",
+    "vim-mode-plus"
   ]
 }

@@ -103,6 +103,7 @@
   'alt-x f t': 'tree-view:toggle'
   'alt-x f s': 'tree-view:show'
   'alt-x f p': 'chmod:current-file'
+  'alt-x t h': 'platformio-ide-terminal:focus'
 
 '.advanced-open-file atom-text-editor':
   'alt-j': 'advanced-open-file:move-cursor-down'
@@ -116,4 +117,3 @@
   'alt-j': 'platformio-ide-terminal:next'
   'alt-n': 'platformio-ide-terminal:new'
   'alt-c': 'platformio-ide-terminal:close'
-  'alt-f': 'platformio-ide-terminal:fullscreen'

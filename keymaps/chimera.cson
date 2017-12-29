@@ -117,4 +117,4 @@
   'alt-j': 'platformio-ide-terminal:next'
   'alt-x n': 'platformio-ide-terminal:new'
   'alt-x c': 'platformio-ide-terminal:close'
-  'alt-x f': 'platformio-ide-terminal:close'
+  'alt-x f': 'platformio-ide-terminal:fullscreen'

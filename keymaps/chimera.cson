@@ -115,5 +115,6 @@
   'alt-t': 'platformio-ide-terminal:toggle'
   'alt-k': 'platformio-ide-terminal:prev'
   'alt-j': 'platformio-ide-terminal:next'
-  'alt-n': 'platformio-ide-terminal:new'
-  'alt-c': 'platformio-ide-terminal:close'
+  'alt-x n': 'platformio-ide-terminal:new'
+  'alt-x c': 'platformio-ide-terminal:close'
+  'alt-x f': 'platformio-ide-terminal:close'

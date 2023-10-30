@@ -1,5 +1,11 @@
 # Chimera
 
+## Archived Status
+
+Since [atom is sunset](https://github.blog/2022-06-08-sunsetting-atom/), so is Chimera.
+
+## Summary
+
 **CHIMERA IS IN ALPHA**
 **Absolutely everything about it can change, use at your own risk**
 
